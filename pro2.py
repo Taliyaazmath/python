@@ -4,7 +4,7 @@ from tkinter import messagebox
 root=Tk()
 root.geometry("350x350")
 root.title('Calculator')
-#root.resizable(width=False,height=False)
+root.resizable(width=False,height=False)
 frame=Frame(root)
 frame.pack()
 
@@ -27,7 +27,7 @@ global e2
 e2=Entry(root,bg="white")
 e2.place(x=150,y=90)
 
-
+#making functions
 def addition():
     a=e1.get()
     b=e2.get()
@@ -72,6 +72,7 @@ def mod():
     result=x%y
     messagebox.showinfo("the result",result)
     return
+
 def expo():
     a=e1.get()
     b=e2.get()
@@ -80,6 +81,7 @@ def expo():
     result=x**y
     messagebox.showinfo("the result",result)
     return
+
 def floor():
     a=e1.get()
     b=e2.get()
@@ -95,6 +97,7 @@ def clear():
 
 def close():
     root.destroy()
+    
 #make buttons
 
 b1 = Button(root,text="+",command=addition,padx=20,pady=20,bg="white")
