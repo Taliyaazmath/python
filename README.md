@@ -173,10 +173,6 @@ canvas.create_window(170, 300, window=b9)
 root.mainloop()
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - This project uses the Tkinter library for GUI and Pillow for image handling.
